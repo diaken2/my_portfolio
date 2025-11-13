@@ -87,7 +87,7 @@ console.log(formData)
     { metric: "Automation", value: "85%", desc: "of manual processes" },
     { metric: "Audience Reach", value: "+40%", desc: "through RSS distribution" }
   ],
-  budget: "$1,300",
+  budget: "$3,200",
   timeline: "3 weeks",
   images: [
     "/projects/viralbear-1.png",
@@ -121,7 +121,7 @@ console.log(formData)
         { metric: "Automation", value: "100%", desc: "manual processes" },
         { metric: "Integration", value: "3 days", desc: "with existing systems" }
       ],
-      budget: "$1,500",
+      budget: "$4,500",
       timeline: "3 weeks",
       images: [
         "/projects/mts-1.png",
@@ -154,7 +154,7 @@ console.log(formData)
         { metric: "Data Errors", value: "-85%", desc: "in catalog" },
         { metric: "Staff Training", value: "30 min", desc: "for new managers" }
       ],
-      budget: "$950",
+      budget: "$2,800",
       timeline: "10 days",
       images: [
         "/projects/svb-en-1.png",
@@ -197,38 +197,38 @@ console.log(formData)
     }
   ]
 
-  const services = [
-    {
-      title: "Startup Package", 
-      description: "Perfect for MVPs, landing pages, and small business applications",
-      price: "from $800",
-      duration: "1-2 weeks",
-      features: ["Full-stack development", "Database design", "Deployment", "14-day support"],
-      cta: "Discuss Project", 
-      type: "startup",
-      popular: true
-    },
-    {
-      title: "Business Solutions",
-      description: "Complete projects: from analysis to launch and maintenance",
-      price: "from $1,500",
-      duration: "3-4 weeks",
-      features: ["Architecture planning", "Team coordination", "1-month warranty", "Technical documentation"],
-      cta: "Book Slot",
-      type: "business",
-      popular: false
-    },
-    {
-      title: "Enterprise Systems",
-      description: "Complex CRM, management systems and scalable applications",
-      price: "from $3,000",
-      duration: "4-6 weeks",
-      features: ["Advanced architecture", "API integration", "3-month support", "Performance optimization"],
-      cta: "Schedule Call",
-      type: "enterprise",
-      popular: false
-    }
-  ]
+ const services = [
+  {
+    title: "Quick Start Package", 
+    description: "Perfect for MVPs, landing pages, and small business applications",
+    price: "from $1,800", // БЫЛО $800
+    duration: "1-2 weeks",
+    features: ["Full-stack development", "Database design", "Deployment", "14-day support"],
+    cta: "Discuss Project", 
+    type: "startup",
+    popular: true
+  },
+  {
+    title: "Business Solutions",
+    description: "Complete projects: from analysis to launch and maintenance",
+    price: "from $3,500", // БЫЛО $1,500
+    duration: "3-4 weeks",
+    features: ["Architecture planning", "Team coordination", "1-month warranty", "Technical documentation"],
+    cta: "Book Slot",
+    type: "business",
+    popular: false
+  },
+  {
+    title: "Enterprise Systems",
+    description: "Complex CRM, management systems and scalable applications", 
+    price: "from $6,000", // БЫЛО $3,000
+    duration: "4-6 weeks",
+    features: ["Advanced architecture", "API integration", "3-month support", "Performance optimization"],
+    cta: "Schedule Call",
+    type: "enterprise",
+    popular: false
+  }
+]
 
   const workProcess = [
     {
