@@ -197,38 +197,7 @@ console.log(formData)
     }
   ]
 
- const services = [
-  {
-    title: "Quick Start Package", 
-    description: "Perfect for MVPs, landing pages, and small business applications",
-    price: "from $1,800", // БЫЛО $800
-    duration: "1-2 weeks",
-    features: ["Full-stack development", "Database design", "Deployment", "14-day support"],
-    cta: "Discuss Project", 
-    type: "startup",
-    popular: true
-  },
-  {
-    title: "Business Solutions",
-    description: "Complete projects: from analysis to launch and maintenance",
-    price: "from $3,500", // БЫЛО $1,500
-    duration: "3-4 weeks",
-    features: ["Architecture planning", "Team coordination", "1-month warranty", "Technical documentation"],
-    cta: "Book Slot",
-    type: "business",
-    popular: false
-  },
-  {
-    title: "Enterprise Systems",
-    description: "Complex CRM, management systems and scalable applications", 
-    price: "from $6,000", // БЫЛО $3,000
-    duration: "4-6 weeks",
-    features: ["Advanced architecture", "API integration", "3-month support", "Performance optimization"],
-    cta: "Schedule Call",
-    type: "enterprise",
-    popular: false
-  }
-]
+
 
   const workProcess = [
     {
@@ -437,96 +406,7 @@ console.log(formData)
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Development Services</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Choose the package that fits your business needs and timeline
-            </p>
-          </div>
-
-          <div className="flex justify-center mb-8">
-            <div className="bg-gray-100 rounded-lg p-1 flex">
-              {services.map((service) => (
-                <button 
-                  key={service.type}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                    activeTab === service.type 
-                      ? 'bg-white text-gray-900 shadow-sm' 
-                      : 'text-gray-600 hover:text-gray-900'
-                  }`}
-                  onClick={() => setActiveTab(service.type)}
-                >
-                  {service.type === 'startup' && '🚀 Startup'}
-                  {service.type === 'business' && '💼 Business'}  
-                  {service.type === 'enterprise' && '🏢 Enterprise'}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {services
-              .filter(service => service.type === activeTab)
-              .map((service, index) => (
-                <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className={`border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 bg-white relative ${
-                    service.popular ? 'border-blue-500 ring-2 ring-blue-100' : 'border-gray-200'
-                  }`}
-                >
-                  {service.popular && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                        Most Popular
-                      </span>
-                    </div>
-                  )}
-                  
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <FileText className="w-4 h-4 text-blue-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
-                  </div>
-                  
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{service.description}</p>
-                  
-                  <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-2xl font-bold text-gray-900">{service.price}</span>
-                    <span className="text-gray-500 text-sm">/{service.duration}</span>
-                  </div>
-                  
-                  <div className="space-y-3 mb-6">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-3">
-                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700 text-sm">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <button 
-                    onClick={() => scrollToSection('contact')}
-                    className={`w-full py-3 rounded-lg font-semibold transition-colors text-sm ${
-                      service.popular 
-                        ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                        : 'bg-gray-900 text-white hover:bg-gray-800'
-                    }`}
-                  >
-                    {service.cta}
-                  </button>
-                </motion.div>
-              ))
-            }
-          </div>
-        </div>
-      </section>
-
+   
       {/* Work Process Section */}
       <section id="process" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
@@ -716,6 +596,18 @@ console.log(formData)
           </div>
         </div>
       </section>
+
+       <section className="py-12 bg-blue-50 border-y border-blue-200">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h3 className="text-xl font-semibold text-blue-900 mb-3">
+             Every project is unique — so is the pricing.
+          </h3>
+          <p className="text-blue-700 text-sm max-w-2xl mx-auto">
+            The final cost depends on the project’s features, timeline, and level of detail. I provide individual estimates after reviewing your requirements.
+          </p>
+        </div>
+      </section>
+
 
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-gray-50">
