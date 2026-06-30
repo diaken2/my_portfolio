@@ -256,7 +256,7 @@ console.log(formData)
       text: "Kenan developed a booking system for our photographer network. Excellent work! Clients can now self-schedule sessions, saving us 3-4 hours daily on coordination. Smooth integration and intuitive interface.",
       rating: 5,
       project: "Booking System for Photographers",
-      platform: "Upwork",
+      platform: "Direct",
       verified: true
     },
     {
@@ -274,7 +274,7 @@ console.log(formData)
       text: "Kenan solved complex problems where others said 'impossible'. Implemented MRSS feed and Excel/XML generation system. Already 3 successful projects together. Highly recommended for non-trivial tasks.",
       rating: 5,
       project: "MRSS Feed & Reporting System",
-      platform: "Upwork",
+      platform: "Referral",
       verified: true
     }
   ]
@@ -615,29 +615,8 @@ console.log(formData)
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Trusted by businesses worldwide across different platforms
+              Trusted by businesses worldwide
             </p>
-          </div>
-
-          <div className="flex justify-center gap-8 mb-12">
-            <div className="flex items-center gap-2 text-gray-600">
-              <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold">U</span>
-              </div>
-              <span className="text-sm font-medium">Upwork</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-600">
-              <div className="w-6 h-6 bg-black rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold">F</span>
-              </div>
-              <span className="text-sm font-medium">Fiverr</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-600">
-              <div className="w-6 h-6 bg-blue-700 rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold">in</span>
-              </div>
-              <span className="text-sm font-medium">LinkedIn</span>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -659,9 +638,6 @@ console.log(formData)
                     {testimonial.verified && (
                       <Shield className="w-4 h-4 text-green-500" />
                     )}
-                    <span className="text-xs text-gray-500 bg-white px-2 py-1 rounded-full border">
-                      {testimonial.platform}
-                    </span>
                   </div>
                 </div>
 
